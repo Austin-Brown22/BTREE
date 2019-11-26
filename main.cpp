@@ -46,6 +46,9 @@ class list{// dosent mess with left and right pointers on nodes
         size = 0;
         degree = degree1;
         kids = new list*[degree+1];
+        for(int i=0; i<=degree; i++){
+            kids[i] = nullptr;
+        }
     }
 
     void insert(int number){// dosent handle spliting, or kids at all, the ascend function does that
